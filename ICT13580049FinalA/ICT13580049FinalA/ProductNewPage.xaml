@@ -133,7 +133,7 @@
                             x:Name="salaryEntry"
                             Placeholder="ราคา"
                             BackgroundColor="#B0FFFFFF"
-                             Keyboard="Numaric"/>
+                             Keyboard="Numeric"/>
 
                     
 

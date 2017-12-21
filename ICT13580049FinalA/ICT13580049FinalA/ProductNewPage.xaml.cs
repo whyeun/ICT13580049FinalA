@@ -127,10 +127,5 @@ namespace ICT13580049FinalA
 
         }
 
-        private void MySlider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            int value = (int)e.NewValue;
-
-        }
     }
 }
