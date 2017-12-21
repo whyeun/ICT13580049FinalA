@@ -39,8 +39,7 @@ namespace ICT13580049FinalA
             statusPicker.Items.Add("แต่งงานแล้ว");
 
             
-            mySlider.ValueChanged += MySlider_ValueChanged;
-            myStepper.ValueChanged += MyStepper_ValueChanged;
+    
 
             if (product != null)
             {
@@ -101,7 +100,7 @@ namespace ICT13580049FinalA
                     product.Status = statusPicker.SelectedItem.ToString();
                     //product.Children = chlidLabel.ToString();
                     product.Address = addressEditor.Text;
-                    product.Saraly = decimal.Parse(salaryLabel.Text);
+                    product.Saraly = salaryEntry.Text;
 
 
                     var id = App.DbHelper.UpdateProduct(product);
