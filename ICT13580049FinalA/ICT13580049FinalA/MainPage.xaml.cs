@@ -12,6 +12,12 @@ namespace ICT13580049FinalA
 		public MainPage()
 		{
 			InitializeComponent();
+            newButton.Clicked += NewButton_Clicked;
 		}
-	}
+
+        private void NewButton_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new ProductNewPage());
+        }
+    }
 }
