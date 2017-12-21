@@ -40,23 +40,43 @@
                             Source="https://images-na.ssl-images-amazon.com/.../41m4vuGbstL..."/>
                         <StackLayout
                             Grid.Column="1">
+                            <Label
+                Text="{Binding Name}"
+                FontAttributes="Bold"
+                TextColor="Navy"/>
+                            <Label
+                Text="{Binding Lastname}"
+                FontAttributes="Bold"
+                TextColor="Navy"/>
+                            <Label
+                Text="{Binding Age ,StringFormat = 'อายุ {0} '}"/>
+                            <Label
+                Text="{Binding Sex}"
+                FontAttributes="Bold"
+                TextColor="Navy"/>
 
                             <Label
-                            Text="{Binding Name}"
-                            FontAttributes="Bold"
-                            TextColor="Navy"/>
+                Text="{Binding Department ,StringFormat= 'แผนก {0} '}"/>
 
                             <Label
-                            Text="{Binding Description}"
-                            LineBreakMode="TailTruncation"/>
+                Text="{Binding Phone ,StringFormat= 'เบอร์โทร {0} '}"/>
+                            <Label
+                Text="{Binding Address}"
+                FontAttributes="Bold"
+                TextColor="Navy"/>
+                            <Label
+                Text="{Binding Status}"
+                FontAttributes="Bold"
+                TextColor="Navy"/>
+                            <Label
+                Text="{Binding Number ,StringFormat= ' จำนวนบุตร {0} '}"/>
 
                             <Label
-                            Text="{Binding SellPrice, StringFormat='ราคา {0:N0} บาท'}"/>
-
-                            <Label
-                        Text="{Binding Stock, StringFormat='สินค้าคงเหลือ {0} ชิ้น'}"/>
+                Text="{Binding Saraly ,StringFormat= ' เงินเดือน {0} '}"/>
 
                         </StackLayout>
+
+             
 
                         <Button
                         Text="+"
